@@ -25,14 +25,14 @@
 ---
 ## 사용 기술(예시)
 | **Category**         | **Technologies** |
-|----------------------|-------------|
-| **Frontend**         | html        |
-| **Backend**          | flask, excel |
-| **devops**           | localhost   |
-| **Others**           | Github, Notion, Figma |
+|----------------------|------------------|
+| **Frontend**         | html, css        |
+| **Backend**          | javascript       |
+| **devops**           | localhost        |
+| **Others**           | Github           |
 
 ---
 ## 팀원 소개
 | **이진욱**            | **임성준** | **김준백** | **안창혁** |
-|----------------------|----------|-----------|---------|
-| 팀장(Leader), Frontend | Frontend | Backend, devops | Backend |
+|-----------------------|------------|-------------|------------|
+| 팀장(Leader), Frontend| Frontend | Backend, devops | Backend |
