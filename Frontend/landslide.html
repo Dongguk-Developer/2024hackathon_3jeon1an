@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>산사태 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="landslide.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="landslide-info-wrapper">
+        <!-- 실시간 산사태 상황 박스 -->
+        <div class="real-time-landslide box-with-line">
+          <h3>실시간 산사태 상황</h3>
+
+          <!-- 이미지 추가 -->
+          <img src="landslide.jpg" alt="실시간 산사태 상황 이미지" class="landslide-image">
+
+          <!-- 표 -->
+          <table class="landslide-table">
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>상태</th>
+                <th>알림</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>불국사</td>
+                <td>위험</td>
+                <td>산사태 발생 가능성 높음</td>
+              </tr>
+              <tr>
+                <td>경주시 남부</td>
+                <td>주의</td>
+                <td>강우로 인한 취약 지역</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>정상</td>
+                <td>문제 없음</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 산사태 예측 가능 지역 박스 -->
+        <div class="predicted-landslide box-with-line">
+          <h3>산사태 예측 가능 지역</h3>
+          <ul class="landslide-prediction-list">
+            <li>
+              <span class="date">2023년 6월 22일</span>
+              <span class="event">경주시 북부 지역 산사태 위험</span>
+              <p class="details">사유: <strong>연속 강우로 인한 토양 침식</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 6월 23일</span>
+              <span class="event">감포읍 해안 지역 산사태 주의</span>
+              <p class="details">사유: <strong>지반 약화</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 6월 24일</span>
+              <span class="event">불국사 근처 산사태 가능성</span>
+              <p class="details">사유: <strong>비탈면 불안정</strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

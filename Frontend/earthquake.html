@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지진 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="earthquake.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="earthquake-info-wrapper">
+        <!-- 현재 지역별 진도 조회 박스 -->
+        <div class="current-intensity box-with-line">
+          <h3>현재 지역별 진도 조회</h3>
+
+          <!-- 이미지 -->
+          <img src="earthquake.png" alt="현재 지역별 진도 이미지" class="earthquake-image">
+
+          <!-- 표 -->
+          <table class="earthquake-table">
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>진도</th>
+                <th>상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 중심</td>
+                <td>4.2</td>
+                <td>위험</td>
+              </tr>
+              <tr>
+                <td>불국사 지역</td>
+                <td>3.8</td>
+                <td>주의</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>2.5</td>
+                <td>정상</td>
+              </tr>
+              <tr>
+                <td>안강읍</td>
+                <td>3.0</td>
+                <td>주의</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 과거 지진 활동 박스 -->
+        <div class="past-earthquake box-with-line">
+          <h3>과거 지진 활동</h3>
+          <ul class="past-earthquake-list">
+            <li>
+              <span class="date">2023년 4월 12일</span>
+              <span class="event">경주시 중심부, 규모 4.3 지진 발생</span>
+              <p class="details">피해: <strong>경미한 구조물 손상</strong></p>
+            </li>
+            <li>
+              <span class="date">2021년 8월 30일</span>
+              <span class="event">감포읍, 규모 3.5 지진 발생</span>
+              <p class="details">대응: <strong>주민 대피 권고</strong></p>
+            </li>
+            <li>
+              <span class="date">2020년 12월 15일</span>
+              <span class="event">불국사 근처, 규모 4.1 지진 발생</span>
+              <p class="details">복구: <strong>48시간 내 완료</strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

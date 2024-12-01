@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홍수 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="flood.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="flood-info-wrapper">
+        <!-- 경주 지역 강수량 박스 -->
+        <div class="rainfall-info box-with-line">
+          <h3>경주 지역 강수량</h3>
+
+          <!-- 이미지 -->
+          <img src="water.jpg" alt="경주 지역 강수량 이미지" class="rainfall-image">
+
+          <!-- 표 -->
+          <table class="rainfall-table">
+            <thead>
+              <tr>
+                <th>지역</th>
+                <th>강수량 (mm)</th>
+                <th>상태</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>경주시 중심</td>
+                <td>120</td>
+                <td>위험</td>
+              </tr>
+              <tr>
+                <td>불국사 지역</td>
+                <td>95</td>
+                <td>주의</td>
+              </tr>
+              <tr>
+                <td>감포읍</td>
+                <td>70</td>
+                <td>정상</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- 과거 특보 박스 -->
+        <div class="past-warning box-with-line">
+          <h3>과거 특보</h3>
+          <ul class="past-warning-list">
+            <li>
+              <span class="date">2023년 6월 22일</span>
+              <span class="event">형산강 범람 경고</span>
+              <p class="details">조치: <strong>주민 대피 권고</strong>, 피해 최소화</p>
+            </li>
+            <li>
+              <span class="date">2022년 8월 15일</span>
+              <span class="event">경주시 중심부 집중호우</span>
+              <p class="details">결과: <strong>침수 피해</strong>, 복구 완료</p>
+            </li>
+            <li>
+              <span class="date">2021년 7월 3일</span>
+              <span class="event">불국사 지역 강우량 초과</span>
+              <p class="details">사유: <strong>계속된 폭우</strong>, 대비 필수</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

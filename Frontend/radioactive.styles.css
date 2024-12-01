@@ -1,0 +1,48 @@
+/* 방사능 페이지 메인 박스 */
+.radioactive-info {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+/* 방사능 수치 표 스타일 */
+.radioactive-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.radioactive-table th, .radioactive-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.radioactive-table th {
+  background-color: #f5f5f5;
+  font-weight: bold;
+  color: #333;
+}
+
+.radioactive-table td {
+  background-color: white;
+}
+
+.radioactive-table td:nth-child(3) {
+  font-weight: bold;
+}
+
+.radioactive-table td:nth-child(3):contains("정상") {
+  color: green;
+}
+
+.radioactive-table td:nth-child(3):contains("주의") {
+  color: orange;
+}
+
+.radioactive-table td:nth-child(3):contains("위험") {
+  color: red;
+}

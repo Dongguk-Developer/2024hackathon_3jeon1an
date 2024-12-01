@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>태풍 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="typhoon.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <main class="content">
+      <div class="typhoon-info-wrapper">
+        <!-- 태풍 경로 박스 -->
+        <div class="typhoon-path box-with-line">
+          <h3>태풍 경로</h3>
+          <img src="typhoon.example.gif" alt="태풍 경로 이미지" class="typhoon-image">
+          
+          <!-- 태풍 경로 및 속도 정보 -->
+          <div class="typhoon-details">
+            <ul>
+              <li><strong>현재 위치:</strong> 경주시 북동쪽 30km</li>
+              <li><strong>풍속:</strong> 140km/h</li>
+              <li><strong>중심 기압:</strong> 960hPa</li>
+              <li><strong>예상 이동 경로:</strong> 북서쪽으로 시속 20km 이동</li>
+              <li><strong>피해 예상:</strong> 경주시 전역 강풍 및 폭우</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 피해 예상 지역 박스 -->
+        <div class="typhoon-affected box-with-line">
+          <h3>피해 예상 지역</h3>
+          <ul class="typhoon-affected-list">
+            <li>
+              <span class="date">2023년 8월 10일</span>
+              <span class="event">경주시 남부 지역, 강풍 및 폭우 피해 예상</span>
+              <p class="details">상세 내용: <strong>저지대 침수 가능성 높음, 주민 대피 권고</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 8월 11일</span>
+              <span class="event">감포읍 해안가, 높은 파도 및 강풍 피해 예상</span>
+              <p class="details">상세 내용: <strong>해안가 접근 금지, 방파제 정비 필요</strong></p>
+            </li>
+            <li>
+              <span class="date">2023년 8월 12일</span>
+              <span class="event">불국사 지역, 산사태 발생 가능성</span>
+              <p class="details">상세 내용: <strong>산사태 취약 지역 주민 철수 권고</strong></p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>방사능 - 경주 재난 알림이</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="radioactive.styles.css">
+</head>
+<body>
+  <header class="top-bar">
+    <div class="live-time" id="live-time"></div>
+    <a href="index.html" class="title">경주 재난 알림이</a>
+    <div class="lang-toggle">
+      <div class="lang-box" id="lang-box">KOR</div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <!-- 메뉴바 -->
+    <aside class="menu-bar">
+      <div class="menu-content">
+        <div class="section">
+          <h3>재난 상황</h3>
+          <ul>
+            <li><a href="flood.html" class="menu-item" data-page="flood">🌊 홍수</a></li>
+            <li><a href="typhoon.html" class="menu-item" data-page="typhoon">🌪️ 태풍</a></li>
+            <li><a href="earthquake.html" class="menu-item" data-page="earthquake">🌍 지진</a></li>
+            <li><a href="fire.html" class="menu-item" data-page="fire">🔥 화재</a></li>
+            <li><a href="landslide.html" class="menu-item" data-page="landslide">⛰️ 산사태</a></li>
+            <li><a href="radioactive.html" class="menu-item active" data-page="radioactive">☢️ 방사능</a></li>
+            <li><a href="shelter.html" class="menu-item" data-page="shelter">🏠 대피소</a></li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 메인 콘텐츠 -->
+    <main class="content">
+      <div class="radioactive-info box-with-line">
+        <h3>지역별 방사선 수치</h3>
+        <p>아래는 경주시의 주요 지역별 방사선 수치와 상태입니다.</p>
+        <table class="radioactive-table">
+          <thead>
+            <tr>
+              <th>지역</th>
+              <th>방사선 수치 (μSv/h)</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>경주시 중심</td>
+              <td>0.08</td>
+              <td>정상</td>
+            </tr>
+            <tr>
+              <td>불국사</td>
+              <td>0.12</td>
+              <td>주의</td>
+            </tr>
+            <tr>
+              <td>감포읍</td>
+              <td>0.25</td>
+              <td>위험</td>
+            </tr>
+            <tr>
+              <td>외동읍</td>
+              <td>0.15</td>
+              <td>주의</td>
+            </tr>
+            <tr>
+              <td>월성 원자력 발전소</td>
+              <td>0.35</td>
+              <td>위험</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
