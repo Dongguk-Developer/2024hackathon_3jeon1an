@@ -23,7 +23,7 @@
 ![서비스 아키텍처](./img/System_Architecture.png)
 
 ---
-## 사용 기술(예시)
+## 사용 기술
 | **Category**         | **Technologies** |
 |----------------------|------------------|
 | **Frontend**         | html, css        |
